@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="list" rowHeight="79" id="KGk-i7-Jjw" customClass="ListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jo-4d-vum">
+                        <rect key="frame" x="90" y="10" width="49.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sn-4s-JHv">
+                        <rect key="frame" x="90" y="49" width="51.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bUs-7N-jug">
+                        <rect key="frame" x="10" y="10" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="N7d-ZU-Ge1"/>
+                            <constraint firstAttribute="height" constant="60" id="Oh2-ko-at7"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="6sn-4s-JHv" firstAttribute="leading" secondItem="9jo-4d-vum" secondAttribute="leading" id="DaZ-UO-Uva"/>
+                    <constraint firstItem="bUs-7N-jug" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ESV-iD-LNk"/>
+                    <constraint firstAttribute="bottom" secondItem="bUs-7N-jug" secondAttribute="bottom" constant="10" id="Fe6-zq-0LC"/>
+                    <constraint firstItem="9jo-4d-vum" firstAttribute="top" secondItem="bUs-7N-jug" secondAttribute="top" id="ZSV-id-bvt"/>
+                    <constraint firstItem="bUs-7N-jug" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="fpQ-yX-c5R"/>
+                    <constraint firstItem="9jo-4d-vum" firstAttribute="leading" secondItem="bUs-7N-jug" secondAttribute="trailing" constant="20" id="t3o-wd-PDa"/>
+                    <constraint firstItem="6sn-4s-JHv" firstAttribute="bottom" secondItem="bUs-7N-jug" secondAttribute="bottom" id="uYd-1u-3Kz"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Fe6-zq-0LC"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="imageV" destination="bUs-7N-jug" id="ccc-LS-aWw"/>
+                <outlet property="singerLabel" destination="6sn-4s-JHv" id="bAm-2Z-dUS"/>
+                <outlet property="titleLabel" destination="9jo-4d-vum" id="Oyl-eq-l7O"/>
+            </connections>
+            <point key="canvasLocation" x="161" y="341"/>
+        </tableViewCell>
+    </objects>
+</document>

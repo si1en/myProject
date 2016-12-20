@@ -1,0 +1,47 @@
+//
+//  BuDeJ.pch
+//  百思不得姐
+//
+//  Created by Apple on 16/10/12.
+//  Copyright © 2016年 Apple. All rights reserved.
+//
+///Users/apple/Desktop/My Code/iOS/13-项目实战/百思不得姐/百思不得姐/BuDeJ.pch
+
+#import "UIView+MyFrame.h"
+#import "UIImage+OriginalImage.h"
+#import "UINavigationItem+MyItem.h"
+#import "GlobalConst.h"
+#import "NSDate+Interval.h"
+#import "UIView+LoadNib.h"
+#import "UIImageView+LoadPicture.h"
+
+#define LeeFUNC NSLog(@"%s",__func__);
+#define ScreenW [UIScreen mainScreen].bounds.size.width
+#define ScreenH [UIScreen mainScreen].bounds.size.height
+
+#define LeeColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1]
+
+
+#ifdef DEBUG 
+#define LeeNSLog(...) NSLog(__VA_ARGS__);
+#else
+#define LeeNSLog(...)
+#endif
+
+#define iPhone4 (ScreenH == 480)
+#define iPhone5 (ScreenH == 568)
+#define iPhone6 (ScreenH == 667)
+#define iPhone6p (ScreenH == 736)
+
+typedef  NS_ENUM(NSInteger, ContentType){
+    /** 全部 */
+    TopicTypeAll = 1,
+    /** 图片 */
+    TopicTypePicture = 10,
+    /** 段子(文字) */
+    TopicTypeWord = 29,
+    /** 声音 */
+    TopicTypeVoice = 31,
+    /** 视频 */
+    TopicTypeVideo = 41
+};
